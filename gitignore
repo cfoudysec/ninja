@@ -1,0 +1,48 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ── Virtual environments ──────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Secrets ───────────────────────────────────────────────────────────────
+# Never commit API keys or endpoint credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Engagement artifacts ──────────────────────────────────────────────────
+# NINJA output directories from the workflows in the README.
+# Do NOT commit these — they contain test payloads and client deliverables
+# that are scoped to specific authorized engagements.
+results/
+reports/
+out/
+*.ninja.json
+*.ninja.html
+
+# Permit the sample shipped in examples/
+!examples/sample_report.html
+
+# ── Editor / OS ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Misc ──────────────────────────────────────────────────────────────────
+*.log
+tmp/
+scratch/
